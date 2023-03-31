@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Hatszöggyep</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
     <div class="container">
-        <h1>Sablon</h1>
+        <h1 class="text-center">Hatszöggyep</h1>
+    
+        <div class="hatszöggyepform">
+            <div class="mt-3"> 
+                <label for="side1" class="form-label">egész telek oldala:</label>
+                <input type="text" id="side1" class="form-control">
+            </div>
+            <div class="mt-3"> 
+                <label for="side2" class="form-label">fél telek oldala:</label>
+                <input type="text" id="side2" class="form-control">
+            </div>
+
+            <button id="calcButton" class="btn btn-danger mt-3">Számít</button>
+            
+            <div class="mt-3" id="result1"> 
+                <label for="egeszeredmeny" class="form-label ">egész telek terület:</label>
+                <input type="text" id="egeszeredmeny" class="form-control" readonly>
+            </div>
+            <div class="mt-3" id="result2"> 
+                <label for="feleredmeny" class="form-label ">fél telek terület:</label>
+                <input type="text" id="feleredmeny" class="form-control" readonly>
+            </div>
+        
+            <footer class="text-center rounded mx-auto d-block mt-5"><span>Szekeres Miklós</span>, Szoft 1/2N, <span>2023.03.31</span></footer>
+        </div>
+    
+    
     </div>
     <script src="js/bootstrap.js"></script>
     <script src="app.js"></script>
